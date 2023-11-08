@@ -22,7 +22,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		{50,300},
 		{5,5},
 		{0,0},
-		32
+		50
 	};
 	int scene = 0;
 	// キー入力結果を受け取る箱
@@ -52,6 +52,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 				player.acseraration = { 0,0 };
 			}
 			if (keys[DIK_RETURN] && !preKeys[DIK_RETURN]) {
+				player.pos = { 50,300 };
+				player.acseraration = { 0,0 };
 				scene = 1;
 			}
 			break;
@@ -67,6 +69,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 				player.acseraration = { 0,0 };
 			}
 			if (keys[DIK_RETURN] && !preKeys[DIK_RETURN]) {
+				player.pos = { 50,300 };
+				player.acseraration = { 0,0 };
 				scene = 0;
 			}
 			break;
